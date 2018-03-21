@@ -1,0 +1,247 @@
+body {
+  background: #171a3d;
+  font-family: "Work Sans", sans-serif;
+  text-align: center; }
+
+h1 {
+  color: #14bebd; }
+
+section {
+  background: #1e2148;
+  border-radius: 3%;
+  box-sizing: border-box;
+  color: #fff;
+  height: 220px;
+  margin: 0 auto;
+  text-align: center;
+  width: 400px; }
+
+.hide {
+  display: none; }
+
+.checked {
+  background-color: #04BCBA !important; }
+
+.paypal {
+  border-bottom: 1px solid rgba(142, 142, 142, 0.1);
+  padding-bottom: 18px;
+  padding-top: 20px;
+  position: relative;
+  text-align: left;
+  width: 400px; }
+  .paypal label {
+    font-weight: bolder;
+    padding: 60px; }
+  .paypal input {
+    left: 20px;
+    opacity: 0;
+    position: absolute; }
+  .paypal .checkmarkp {
+    background-color: rgba(143, 143, 143, 0.1);
+    border: 2px solid rgba(143, 143, 143, 0.1);
+    border-radius: 100%;
+    box-sizing: border-box;
+    content: "";
+    cursor: pointer;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    width: 20px;
+    z-index: 10; }
+    .paypal .checkmarkp:hover {
+      background-color: #ccc; }
+  .paypal img {
+    background-color: #fff;
+    border-radius: 10%;
+    float: right;
+    height: 20px;
+    margin-right: 5%;
+    width: 30px; }
+
+.debit {
+  position: relative;
+  text-align: left;
+  width: 400px; }
+  .debit label {
+    font-weight: bolder;
+    padding: 60px; }
+  .debit input {
+    cursor: pointer;
+    left: 20px;
+    opacity: 0;
+    position: absolute; }
+  .debit .checkmarkd {
+    background-color: rgba(143, 143, 143, 0.1);
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    width: 20px;
+    content: "";
+    cursor: pointer;
+    border: 2px solid rgba(143, 143, 143, 0.1);
+    position: absolute;
+    border-radius: 100%;
+    box-sizing: border-box; }
+    .debit .checkmarkd:hover {
+      background-color: #ccc; }
+  .debit img {
+    border-radius: 10%;
+    float: right;
+    height: 20px;
+    margin-right: 5%;
+    width: 30px; }
+
+.card-info {
+  background-color: #242852;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+  height: 120px;
+  position: absolute;
+  top: 210px; }
+  .card-info::before {
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 8px solid #1e2148;
+    content: "";
+    height: 0;
+    position: relative;
+    right: 150px;
+    top: 8px;
+    width: 0; }
+  .card-info input {
+    background-color: #242852;
+    border: 0;
+    font-size: 18px;
+    color: #fff; }
+    .card-info input:focus {
+      font-size: 18px;
+      color: #fff; }
+  .card-info .zone1 {
+    background-color: #242852;
+    border-bottom: 1px solid rgba(142, 142, 142, 0.1);
+    width: 400px; }
+    .card-info .zone1 label {
+      color: rgba(185, 216, 218, 0.5);
+      float: left;
+      padding-left: 20px; }
+    .card-info .zone1 input {
+      bottom: 10px;
+      height: 40px;
+      left: 10px;
+      position: relative;
+      width: 250px; }
+  .card-info .zone2 {
+    background-color: #242852;
+    height: 28px;
+    width: 400px; }
+    .card-info .zone2 label {
+      color: rgba(185, 216, 218, 0.5); }
+  .card-info .exp {
+    float: left;
+    margin-left: 20px; }
+    .card-info .exp input {
+      height: 40px;
+      margin-left: 20px;
+      margin-top: 2px;
+      width: 90px; }
+      .card-info .exp input::placeholder {
+        color: rgba(64, 74, 119, 0.93); }
+  .card-info .cvc {
+    float: right;
+    padding-right: 120px; }
+    .card-info .cvc input {
+      height: 38px;
+      margin-left: 10px;
+      margin-top: 2px;
+      width: 40px; }
+      .card-info .cvc input::placeholder {
+        color: rgba(64, 74, 119, 0.93); }
+  .card-info .color {
+    bottom: 30px;
+    color: #11CAC6;
+    left: 80px;
+    position: relative; }
+
+.btn {
+  background: #14bebd;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 13px 40px;
+  position: relative;
+  text-decoration: none;
+  top: 60px;
+  width: 400px; }
+  .btn:hover {
+    background: #3cb0fd;
+    text-decoration: none; }
+
+.btnpal {
+  background: #14bebd;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 13px 40px;
+  position: relative;
+  text-decoration: none;
+  top: 90px;
+  width: 400px;
+  z-index: 2; }
+  .btnpal:hover {
+    background: #3cb0fd;
+    text-decoration: none; }
+
+.lock {
+  padding-right: 10px; }
+
+.error {
+  display: none; }
+
+.error_show {
+  display: block;
+  position: absolute;
+  top: 47px;
+  right: 15px;
+  color: red;
+  float: right;
+  font-size: 12px; }
+
+.error_showex {
+  display: block;
+  position: absolute;
+  left: 40px;
+  color: red;
+  font-size: 12px; }
+
+.error_showcvc {
+  display: block;
+  position: absolute;
+  right: 55px;
+  font-size: 12px;
+  color: red; }
+
+.error_showlength {
+  display: block;
+  position: absolute;
+  top: 47px;
+  right: 180px;
+  font-size: 12px;
+  color: red; }
+
+.error_showlengthex {
+  display: block;
+  position: absolute;
+  top: 98px;
+  right: 200px;
+  font-size: 12px;
+  color: red; }
+
+.triangle {
+  position: absolute;
+  right: 140px; }
+
+/*# sourceMappingURL=index.css.map */

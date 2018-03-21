@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Form Using SASS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/png" href="head.png" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Great, thats a lot...</h1>
+    </header>
+    <section>
+      <div class="payment-type">
+        <div class="paypal">
+          <input type="radio" id="paypal" name="pay" value="paypal">
+          <span class="checkmarkp "></span>
+          <label for="paypal">PayPal<img class="paypal-img" src="paypal.svg" alt="paypal" /></label>
+        </div>
+        <br>
+        <div class="debit">
+          <input class="" type="radio" id="debit" name="pay">
+          <span class="checkmarkd"></span>
+          <label for="debit">Debit/credit card </label>
+          <img class="amex-img" src="amex.jpg" alt="">
+          <img class="master-img" src="mastercard.jpg" alt="">
+
+          <img class="visa-img" src="visa.jpg" alt="visa">
+
+        </div>
+      </div>
+      <button class="btnpal hide" type="button" name="button"><i class="fas fa-lock lock"></i>Finish and pay with PayPal</button>
+
+      <div class="card-info">
+        <div class="zone1">
+          <label>Card number</label>
+          <input class="cn" type="text" name="card-number">
+          <span id="errorcn" class="error">This space is required!<i class="fas fa-exclamation-circle triangle"></i></span>
+          <span id="errorlength" class="error">Should be 12 numbers long</span>
+        </div>
+        <div class="zone2">
+          <div class="exp">
+            <label for="expire">Expiry</label>
+            <input id="expire" type="text" name="expire" placeholder="MM/YY">
+            <span id="errorex" class="error">This space is required!<i class="fas fa-exclamation-circle triangle"></i></span>
+            <span id="error_lengthex" class="error_showlengthex">Should be in MM/YY format</i></span>
+          </div>
+          <div class="cvc">
+            <label for="cvc">CVC</label>
+            <input id="cv" type="text" name="cvc" placeholder="123">
+            <span id="errorcvc" class="error">This space is required!<i class="fas fa-exclamation-circle triangle"></i></span>
+          </div>
+
+        </div>
+        <i class="fas fa-info-circle color"></i>
+      </div>
+    </section>
+    <button class="btn" type="button" name="button"><i class="fas fa-lock lock"></i>Finish an pay</button>
+  </body>
+
+</html>
